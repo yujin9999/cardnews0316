@@ -132,6 +132,11 @@
 .slide-number{
   display:none;
 } */
+    .slide h2,
+.slide p,
+.slide-number{
+  display:none;
+}
     @media (max-width: 600px){
       .slide{
         padding:30px 20px;
@@ -391,7 +396,7 @@
     function manualGoToSlide(index){
       stopAutoPlay();
       showSlide(index);
-      updateStatus(`${currentSlide + 1}장으로 이동`);
+      update(`${currentSlide + 1}장으로 이동`);
     }
 
     showSlide(0);
